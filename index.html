@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZYTHERAVEX: the cosmos that never ends</title>
+<meta name="description" content="An infinite archive of identities. Every number opens a different one.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1 class="mark">ZYTHERAVEX</h1>
+  <p class="tag">An archive with no final entry. Keep scrolling, or search for any number.</p>
+  <nav id="filters" class="filters" aria-label="Filter by cosmic class"></nav>
+  <p id="fnote" class="fnote"></p>
+</header>
+<button id="searchBtn" class="sbtn" aria-label="Open search">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+</button>
+<main id="feed" class="feed" aria-label="Identity feed">
+  <div id="spacer" class="spacer"><div id="sentinel" class="sentinel"></div></div>
+</main>
+
+<section id="search" class="overlay" hidden role="dialog" aria-modal="true" aria-label="Search">
+  <div class="panel">
+    <button class="x" data-close="search" aria-label="Close search">&times;</button>
+    <h2>Search the universe</h2>
+    <form id="sform">
+      <input id="sinput" type="search" autocomplete="off" spellcheck="false" placeholder="An identity number of any length, or part of a name">
+      <button type="submit" class="btn">Search</button>
+    </form>
+    <div id="sout" class="sout"></div>
+  </div>
+</section>
+
+<section id="chamber" class="overlay" hidden role="dialog" aria-modal="true" aria-label="Identity chamber"></section>
+<script src="script.js"></script>
+</body>
+</html>
